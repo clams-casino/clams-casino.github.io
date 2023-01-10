@@ -1,5 +1,5 @@
 ---
-title: "Active seat mount system for helicopters"
+title: "Active Seat Mount System for Helicopters"
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Learning robot morphology evolution"
+title: "Learning Robot Morphology Evolution"
 
 ---
 

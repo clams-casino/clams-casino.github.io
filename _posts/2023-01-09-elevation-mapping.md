@@ -1,5 +1,5 @@
 ---
-title: "Elevation mapping for legged robots in vegetation"
+title: "Elevation Mapping for Legged Robots in Vegetation"
 
 ---
 
