@@ -58,8 +58,8 @@ plugins:
 
 author:
   name   : "Mike Zhang"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "<em>Studying :robot: @ ETH Zurich<em/>"
+  avatar : "/assets/images/bio-photo.png"
+  bio    : "Studying :robot: @ ETH Zurich"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
