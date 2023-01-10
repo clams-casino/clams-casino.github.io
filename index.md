@@ -2,16 +2,10 @@
 layout: single
 title: ""
 author_profile: true
+masthead: false
 ---
 
-## Welcome!
-
-To my webpage, where I document some of the projects that I have contributed to.
-{: .text-justify}
-
-
 ## Projects
-
 
 ### [Teaching ANYmal to open doors]({% post_url 2023-01-09-doors %})
 
@@ -48,6 +42,6 @@ to perform better at a specified task
 ### [Active seat mount system for helicopters]({% post_url 2023-01-09-vibration %})
 
 ![](/assets/images/active_vibration_cancellation_icon.png){: .align-left}
-An seat mount system for reducing the severe vibrations
+A seat mount system for reducing the severe vibrations
 experienced by helicopter flight crews
 {: .text-justify}
