@@ -14,7 +14,7 @@
 
 
   <body>
-    <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -23,7 +23,7 @@
                 <p class="name" style="text-align: left;">
                   Mike Zhang
                 </p>
-                <p>I'm a research engineer at the <a href="https://rsl.ethz.ch/">Robotic Systems Lab</a> in ETH Zurich, where I work primarily on mobile manipulation with <a href="https://rsl.ethz.ch/robots-media/alma.html">ALMA</a>, our legged robot with an arm.
+                <p>I'm a research engineer at the <a href="https://rsl.ethz.ch/">Robotic Systems Lab</a> in ETH Zurich, where I work on mobile manipulation with <a href="https://rsl.ethz.ch/robots-media/alma.html">ALMA</a>, our legged robot with an arm.
                 </p>
                 <p>
                 I did my Master's in Robotics, Systems and Control (with distinction) at ETH Zurich, where I worked on a variety of projects in the topics of geometric computer vision, automated robot design, learning robot control, and high-level task planning with Large Language Models.
@@ -38,7 +38,7 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/mike.jpg"><img style="width:80%;max-width:80%;object-fit: cover; border-radius: 6%;" alt="profile photo" src="images/mike.jpg" class="hoverZoomLink"></a>
+                <img style="width:80%;max-width:80%;object-fit: cover; border-radius: 6%;" alt="profile photo" src="images/mike.jpg" class="hoverZoomLink">
               </td>
             </tr>
           </tbody></table>
@@ -55,13 +55,13 @@
 
 
     <tr>
-      <td style="padding:0px;width:35%;vertical-align:middle">
+      <td style="padding:0px;width:38%;vertical-align:middle">
         <video id="tag_mapping" autoplay muted loop width="100%">
           <source src="videos/tag_mapping.mp4"
                   type="video/mp4">
         </video>
       </td>
-      <td style="padding:20px;width:65%;vertical-align:top">
+      <td style="padding:20px;width:62%;vertical-align:top">
       <span class="papertitle">Tag Map: A Text-Based Map for Spatial Reasoning and Navigation<br>with Large Language Models</span>
         </a>
         <br>
@@ -80,19 +80,19 @@
         <a href="https://arxiv.org/abs/2409.15451">arxiv</a>
         <p></p>
         <p>
-        We propose to represent a scene as a database of viewpoints indexed by text tags describing the recognized things at each viewpoint. The representation is extremely memory efficient and easily integrates with a large language model for spatial reasoning and planning grounded on the scene context.
+        We propose to represent a scene as a database of viewpoints indexed by text tags of the recognized things at each viewpoint. The representation is extremely memory efficient and easily integrates with an LLM for planning and spatial reasoning grounded on the scene context.
         </p>
       </td>
     </tr>
 
     <tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td style="padding:20px;vertical-align:middle">
         <video id="door_opening" autoplay muted loop width="100%">
           <source src="videos/door_opening.mp4"
                   type="video/mp4">
         </video>
       </td>
-      <td style="padding:20px;width:75%;vertical-align:top">
+      <td style="padding:20px;vertical-align:top">
 			<span class="papertitle">Learning to Open and Traverse Doors with a Legged Manipulator</span>
         </a>
         <br>
@@ -110,7 +110,7 @@
         <a href="https://arxiv.org/abs/2409.04882">arxiv</a>
         <p></p>
         <p>
-				A teacher-student training approach is used to train a legged robot to robustly traverse through a variety of doors without prior knowledge of the 
+				We train a legged robot to robustly traverse through a variety of doors without prior knowledge of the 
         door's opening direction, instead estimating these properties during the task interaction.
         </p>
       </td>
@@ -118,10 +118,10 @@
 
 
     <tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td style="padding:20px;vertical-align:middle">
         <img src='images/terrain_filtering.png' width="100%">
       </td>
-      <td style="padding:20px;width:75%;vertical-align:top">
+      <td style="padding:20px;vertical-align:top">
 			<span class="papertitle">Semantic Front-End Filter Going to the Jungle</span>
         </a>
         <br>
@@ -130,18 +130,17 @@
         <a href="data/terrain_filter_poster.pdf">poster</a>
         <p></p>
         <p>
-				Self-supervised training of a filter to reconstruct terrain given a semantic point cloud containing measurements of vegetation
-        blocking the view of the ground.
+				Self-supervised learning of a filter to reconstruct terrain in dense vegetation from semantic point cloud measurements.
         </p>
       </td>
     </tr>
 
 
     <tr>
-      <td style="padding:10px;width:25%;vertical-align:middle">
+      <td style="padding:10px;vertical-align:middle">
         <img src='images/morphology_rl.png' width="100%">
       </td>
-      <td style="padding:20px;width:75%;vertical-align:top">
+      <td style="padding:20px;vertical-align:top">
 			<span class="papertitle">On the Origins of Robot Morphologies</span>
         </a>
         <br>
@@ -159,10 +158,10 @@
 
 
     <tr>
-      <td style="padding:10px;width:25%;vertical-align:middle">
+      <td style="padding:10px;vertical-align:middle">
         <img src='images/slam_initialization.png' width="100%">
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
+      <td style="padding:20px;vertical-align:middle">
 			<span class="papertitle">Evaluating Visual Odometry & SLAM Initialization Methods<br>for Arbitrary Multi-Camera Rigs</span>
         </a>
         <br>
@@ -171,7 +170,7 @@
         <a href="data/evaluating_multi_camera_slam_initialization_report.pdf">report</a>
         <p></p>
         <p>
-				A study on the various factors which contribute to the quality of initialization for visual odometry and SLAM pipelines in multi-camera systems.
+				A study on the various factors contributing to the initialization quality for visual odometry and SLAM pipelines in multi-camera systems.
         </p>
       </td>
     </tr>
