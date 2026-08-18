@@ -133,3 +133,48 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* ---------------------------------------------------------- misc gallery */
+
+/* Fallback flow used before gallery.js runs (and if it never does). */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-item {
+  position: relative;
+  flex: 1 1 200px;
+  height: 200px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 3px;
+  background-color: #ececec;
+}
+
+/* Once laid out, rows are positioned explicitly so they end flush with the
+   container edges. */
+.gallery.is-justified {
+  display: block;
+  position: relative;
+}
+
+.gallery.is-justified .gallery-item {
+  position: absolute;
+  flex: none;
+  height: auto;
+}
+
+.gallery-item img,
+.gallery-item video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Video tiles autoplay muted loops; the poster covers the first frame or two
+   before playback starts. */
