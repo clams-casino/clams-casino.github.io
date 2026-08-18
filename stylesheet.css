@@ -134,6 +134,51 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+/* ------------------------------------------------- publications & projects */
+
+/* Each entry is a table row: media cell first, text cell second. Below this
+   width the media column is under ~250px and the thumbnails stop being
+   readable, so the cells stop behaving as columns and stack instead. The
+   media cell comes first in the source, so it lands on top on its own.
+
+   The width and padding overrides need !important because the cells carry
+   their column widths as inline styles. Those cells also supply the page's
+   side margins in these sections, so the padding is re-applied horizontally
+   rather than dropped — 20px, matching the Misc gallery above. */
+@media (max-width: 700px) {
+  .entries,
+  .entries tbody,
+  .entries tr,
+  .entries td {
+    display: block;
+    width: auto !important;
+  }
+
+  .entries td {
+    padding: 0 20px !important;
+  }
+
+  /* the media cell */
+  .entries td:first-child {
+    padding-bottom: 14px !important;
+  }
+
+  .entries td video,
+  .entries td img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Stacked entries would otherwise run into each other, since the columns
+     used to do the separating. */
+  .entries tr + tr {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #ececec;
+  }
+}
+
 /* ---------------------------------------------------------- misc gallery */
 
 /* Fallback flow used before gallery.js runs (and if it never does). */
